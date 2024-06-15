@@ -72,27 +72,6 @@ Before you begin, ensure you have met the following requirements:
 
     This will start the application and open it in your default web browser. If it doesn't, navigate to `http://localhost:3000`.
 
-## Folder Structure
-
-Xogene-React-Assessment
-├── node_modules/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── components/
-│   │   ├── Searchpage.js
-│   │   ├── DrugDetailPage.js
-│   │   └── ...
-│   ├── api.js
-│   ├── App.js
-│   ├── index.js
-│   └── ...
-├── package.json
-├── config-overrides.js
-├── README.md
-└── LICENSE
-
 ## Usage
 
 - **Search Drugs**: Enter the name of a drug in the search bar and click "Search". If the drug is found, a list of results will be displayed.

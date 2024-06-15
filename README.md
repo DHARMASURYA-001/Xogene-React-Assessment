@@ -74,22 +74,24 @@ Before you begin, ensure you have met the following requirements:
 
 ## Folder Structure
 
-├── node_modules
-├── public
-│ ├── index.html
-│ └── ...
-├── src
-│ ├── components
-│ │ ├── Searchpage.js
-│ │ ├── DrugDetailPage.js
-│ │ └── ...
-│ ├── api.js
-│ ├── App.js
-│ ├── index.js
-│ └── ...
+Xogene-React-Assessment
+├── node_modules/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Searchpage.js
+│   │   ├── DrugDetailPage.js
+│   │   └── ...
+│   ├── api.js
+│   ├── App.js
+│   ├── index.js
+│   └── ...
 ├── package.json
 ├── config-overrides.js
 ├── README.md
+└── LICENSE
 
 ## Usage
 

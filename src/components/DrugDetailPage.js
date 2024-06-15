@@ -37,7 +37,7 @@ const DrugDetails = () => {
   }
 
   return (
-    <div>
+    <div className="drug-details-container">
       <h1>{capitalizeFirstLetter(drug.name)}</h1>
       <p><strong>ID:</strong> {drug.rxcui}</p>
       <p><strong>Name:</strong> {drug.name}</p>

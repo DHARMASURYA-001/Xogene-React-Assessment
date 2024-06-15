@@ -1,3 +1,4 @@
+// SearchDrugs.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getDrugs, getSpellingSuggestions } from '../api';
@@ -36,7 +37,7 @@ const SearchDrugs = () => {
   };
 
   return (
-    <div>
+    <div className="search-container">
       <h1>Search for drugs</h1>
       <input
         type="text"
@@ -46,13 +47,24 @@ const SearchDrugs = () => {
       />
       <button onClick={handleSearch}>Search</button>
       {error && <p>{error}</p>}
-      <ul className='box'>
-        {results.map(result => (
-          <li key={result.rxcui} onClick={() => handleResultClick(result)}>
-            {result.name}
-          </li>
-        ))}
-      </ul>
+      <div className="results-table">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Drug Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            {results.map((result, index) => (
+              <tr key={result.rxcui} onClick={() => handleResultClick(result)}>
+                <td>{index + 1}</td>
+                <td>{result.name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

@@ -110,6 +110,12 @@ html {
 }
 
 
+
+.drug-details-container {
+  margin-left: 20px;
+  /* Adjust this value to move the output to the left */
+}
+
 /* Navbar.css */
 @keyframes blink {
   0% {
